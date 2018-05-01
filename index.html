@@ -10,7 +10,7 @@
     <body>
 
       <!-- header -->
-      <div class="header">
+      <header>
         <!-- logo -->
         <div class="logo">
           <img src="./resources/images/ic-logo.svg" alt="logo" />
@@ -26,7 +26,7 @@
             <li>Sign in</li>
           </ul>
         </div><!-- end of the nav bar -->
-      </div><!-- end of the header -->
+      </header><!-- end of the header -->
 
       <!--main banner-->
       <div class="banner">
@@ -54,29 +54,35 @@
 
         <div class="practising-sub">
           <div class="sub-info">
-            <img src="./resources/images/information-orientation.jpg" alt="orientation image" />
+            <div class="image-box">
+              <img src="./resources/images/information-orientation.jpg" alt="orientation image" />
+            </div><!--end of image-box-->
             <div class="sub-content">
               <h3>Orientation date</h3>
               <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
-              <span class="read more">Read more</span>
-            </div><!-- end of sub-content section-->
+              <span class="read-more">Read more</span>
+            </div><!--end of sub-content-box-->
           </div><!-- end of sub-info section-->
 
           <div class="sub-info">
-            <img src="./resources/images/information-campus.jpg" alt="our campus image" />
+            <div class="image-box">
+              <img src="./resources/images/information-campus.jpg" alt="our campus image" />
+            </div><!--end of image-box-->
             <div class="sub-content">
               <h3>Our campus</h3>
               <p>Find which campus is close by you</p>
-              <span class="read more">Read more</span>
+              <span class="read-more">Read more</span>
             </div><!-- end of sub-content section-->
           </div><!-- end of sub-info section-->
 
-          <div class="sub-info">
-            <img src="./resources/images/information-guest-lecture.jpg" alt="guest lecture image" />
+          <div class="sub-info" id="guest">
+            <div class="image-box">
+              <img src="./resources/images/information-guest-lecture.jpg" alt="guest lecture image" />
+            </div><!--end of image-box-->
             <div class="sub-content">
               <h3>Our guest lecture</h3>
               <p>Join a keynote with Oliver Sack about music in medical treatment</p>
-              <span class="read more">Read more</span>
+              <span class="read-more">Read more</span>
             </div><!-- end of sub-content section-->
           </div><!-- end of sub-info section-->
         </div><!-- end of practicing-sub section-->
@@ -85,49 +91,75 @@
       <!--learning section-->
       <div class="learning">
         <h2>Start learning</h2>
+
         <div class="learning-box">
+
           <div class="course">
-            <img src="./resources/images/course-software.jpg" alt="software engineering picture" />
-            <h3>Software engineering</h3>
-            <h4>COURSES</h4>
-            <p>Web Development, Mobile Development, iOT, APIs</p>
+            <div class="course-image">
+              <img src="./resources/images/course-software.jpg" alt="software engineering picture" />
+            </div><!--end of course-image-->
+            <div class="course-content">
+              <h3>Software engineering</h3>
+              <h4>COURSES</h4>
+              <p>Web Development, Mobile Development, iOT, APIs</p>
+            </div><!-- end of course-content -->
           </div><!-- end of course-->
 
           <div class="course">
-            <img src="./resources/images/course-computer-art.jpg" alt="computer art picture" />
-            <h3>Computer art</h3>
-            <h4>COURSES</h4>
-            <p>Images &amp; Design, Web Design, Motion Graphics &amp; Visual Effects, Computer Animation</p>
+            <div class="course-image">
+              <img src="./resources/images/course-computer-art.jpg" alt="computer art picture" />
+            </div><!--end of course-image-->
+            <div class="course-content">
+              <h3>Computer art</h3>
+              <h4>COURSES</h4>
+              <p>Images &amp; Design, Web Design, Motion Graphics &amp; Visual Effects, Computer Animation</p>
+            </div><!-- end of course-content -->
           </div><!-- end of course-->
 
           <div class="course">
-            <img src="./resources/images/course-design.jpg" alt="design picture" />
-            <h3>Design</h3>
-            <h4>COURSES</h4>
-            <p>User Experience Design, User Research, Visual Design</p>
+            <div class="course-image">
+              <img src="./resources/images/course-design.jpg" alt="design picture" />
+            </div><!--end of course-image-->
+            <div class="course-content">
+              <h3>Design</h3>
+              <h4>COURSES</h4>
+              <p>User Experience Design, User Research, Visual Design</p>
+            </div><!-- end of course-content -->
           </div><!-- end of course-->
         </div><!-- end of learning-box -->
 
         <div class="learning-box">
           <div class="course">
-            <img src="./resources/images/course-computer-data.jpg" alt="data picture" />
-            <h3>Data</h3>
-            <h4>COURSES</h4>
-            <p>Data Science, Big Data, SQL, Data Visulization</p>
+            <div class="course-image">
+              <img src="./resources/images/course-data.jpg" alt="data picture" />
+            </div><!--end of course-image-->
+            <div class="course-content">
+              <h3>Data</h3>
+              <h4>COURSES</h4>
+              <p>Data Science, Big Data, SQL, Data Visulization</p>
+            </div><!-- end of course-content -->
           </div><!-- end of course-->
 
           <div class="course">
-            <img src="./resources/images/course-business.jpg" alt="business picture" />
-            <h3>Business</h3>
-            <h4>COURSES</h4>
-            <p>Product Development, Business Development, Startup</p>
+            <div class="course-image">
+              <img src="./resources/images/course-business.jpg" alt="business picture" />
+            </div><!--end of course-image-->
+            <div class="course-content">
+              <h3>Business</h3>
+              <h4>COURSES</h4>
+              <p>Product Development, Business Development, Startup</p>
+            </div><!-- end of course-content -->
           </div><!-- end of course-->
 
           <div class="course">
-            <img src="./resources/images/course-computer-marketing.jpg" alt="marketing picture" />
-            <h3>Marketing</h3>
-            <h4>COURSES</h4>
-            <p>Analytics, Content Marketing, Mobile Marketing</p>
+            <div class="course-image">
+              <img src="./resources/images/course-marketing.jpg" alt="marketing picture" />
+            </div><!--end of course-image-->
+            <div class="course-content">
+              <h3>Marketing</h3>
+              <h4>COURSES</h4>
+              <p>Analytics, Content Marketing, Mobile Marketing</p>
+            </div><!-- end of course-content -->
           </div><!-- end of course-->
         </div><!-- end of learning-box -->
 
@@ -136,33 +168,39 @@
       <!--exhibit section-->
       <div class="exhibit">
         <h2>Thesis exhibit</h2>
-        <div class="exhibit-main">
-          <video width="60%" controls>
-            <source src="./resources/videos/thesis.mp4" type="video/mp4">
-            Your browser does not support the video.
-          </video>
-          <h3>Reimagine urban</h3>
-          <p>"Curbabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
-        </div><!-- end of exhibit-main -->
+        <div class="exhibit-box">
+          <div class="exhibit-main">
+            <video width="100%" autoplay>
+              <source src="./resources/videos/thesis.mp4" type="video/mp4">
+                Your browser does not support the video.
+              </video>
+              <h3>Reimagine urban</h3>
+              <p>"Curbabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
+            </div><!-- end of exhibit-main -->
 
-        <div class="exhibit-sub">
-          <div class="thesis">
-            <img src="./resources/images/thesis-fisma.jpg" alt="fisma picture" />
-            <div class="thesis-content">
-              <h3>Fisma: Design and Prototype</h3>
-              <p>Designer showcase of new prototype product</p>
-            </div><!--end of thesis-content-->
-          </div><!-- end of thesis -->
+          <div class="practising-sub">
+            <div class="sub-info">
+              <div class="image-box">
+                <img src="./resources/images/thesis-fisma.jpg" alt="fisma picture" />
+              </div><!-- end of thesis-image-->
+              <div class="sub-content">
+                <h3>Fisma: Design and Prototype</h3>
+                <p>Designer showcase of new prototype product</p>
+              </div><!--end of thesis-content-->
+            </div><!-- end of thesis -->
 
-          <div class="thesis">
-            <img src="./resources/images/thesis-now-and-then.jpg" alt="now and then picture" />
-            <div class="thesis-content">
-              <h3>Now and then</h3>
-              <p>Research study about New York</p>
-            </div><!--end of thesis-content-->
-          </div><!-- end of thesis -->
+            <div class="sub-info">
+              <div class="image-box">
+                <img src="./resources/images/thesis-now-and-then.jpg" alt="now and then picture" />
+              </div><!-- end of thesis-image-->
+              <div class="sub-content">
+                <h3>Now and then</h3>
+                <p>Research study about New York</p>
+              </div><!--end of thesis-content-->
+            </div><!-- end of thesis -->
 
-        </div><!-- end of exhibit-sub -->
+          </div><!-- end of exhibit-sub -->
+        </div><!-- end of exhibit-box -->
       </div><!-- end of exhibit-->
 
       <!--footer-->
