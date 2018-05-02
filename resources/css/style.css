@@ -1,6 +1,7 @@
 /* html style */
 html {
   box-sizing: border-box;
+  font-family: 'Gothic A1', sans-serif;
   font-size: 16px;
   color: #171717;
   width: 100%;
@@ -36,13 +37,11 @@ header {
 }
 
 .colmar {
-  font-family: 'Gothic A1', sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
 }
 
 .academy {
-  font-family: 'Gothic A1', sans-serif;
   font-size: 1.5rem;
   font-weight: 400;
 }
@@ -51,11 +50,26 @@ header {
   display: flex;
   justify-content: space-between;
   padding-right: 1.5rem;
-  font-family: 'Gothic A1', sans-serif;
 }
 
 .nav ul li {
   margin: auto 0.5rem;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+  .logo, .nav {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
 }
 
 /* main banner */
@@ -68,12 +82,12 @@ header {
   z-index: 1;
 }
 
-.banner .main-image {
+.main-image {
   width: 60%;
   padding: 2rem 1.5rem;
 }
 
-.banner .main-image img {
+.main-image img {
   width: 100%;
 }
 
@@ -84,7 +98,6 @@ header {
 }
 
 .main-content h1 {
-  font-family: 'Gothic A1', sans-serif;
   font-size: 2rem;
   color: #4a4a4a;
   text-align: left;
@@ -94,7 +107,6 @@ header {
 }
 
 .main-content h2 {
-  font-family: 'Playfair Display', serif;
   font-size: 1rem;
   color: #4a4a4a;
   text-align: left;
@@ -108,11 +120,38 @@ header {
 }
 
 .start .start-button {
-  font-family: 'Gothic A1', sans-serif;
   color: #ffffff;
   font-size: 1rem;
   margin: 0.5rem 0;
   text-align: center;
+}
+
+@media only screen and (max-width: 480px) {
+  .banner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-image {
+    width: 100%;
+    padding: 0 0;
+  }
+
+  .main-content {
+    padding: 1rem 2rem;
+  }
+
+  .main-content h1 {
+    padding-top: 1rem;
+  }
+
+  .main-content h2 {
+    padding: 1rem 0 0.5rem 0;
+  }
+
+  .start {
+    margin-bottom: 0.5rem;
+  }
 }
 
 /* practising section */
@@ -133,7 +172,6 @@ header {
 }
 
 .practising-main h2 {
-  font-family: 'Gothic A1', sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
   padding-top: 2rem;
@@ -174,18 +212,17 @@ header {
   width: 65%;
 }
 
-.sub-content h3 {
+h3 {
   font-size: 1.25rem;
-  font-family: 'Gothic A1', sans-serif;
   font-weight: 700;
 }
+
 .sub-content p {
   padding: 0.5rem 0;
 }
 
 .sub-info .read-more {
   color: #388ee2;
-  font-family: 'Gothic A1', sans-serif;
 }
 
 #guest {
@@ -196,6 +233,69 @@ header {
   margin: 1rem 1rem;
 }
 
+.special-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+  .practising {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    justify-content: flex-start;
+  }
+
+  .practising-main {
+    display: none;
+  }
+
+  .practising-sub {
+    width: 100%;
+  }
+
+  .sub-info {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+  }
+
+  .sub-info .image-box {
+    width: 100%;
+    padding: 1rem;
+    margin: 0;
+  }
+
+  .image-box img {
+    width: 100%;
+  }
+
+  .sub-content {
+    padding-left: 1rem;
+    padding-bottom: 3rem;
+    width: 100%;
+  }
+
+  #guest {
+    background-color: #ffffff;
+  }
+
+  #guest .image-box {
+    margin: 0;
+  }
+
+  #guest .sub-content {
+    padding-bottom: 2rem;
+  }
+
+  .guest-desktop {
+    display: none;
+  }
+
+  .special-mobile {
+    display: block;
+  }
+}
 /* learning section */
 .learning {
   background-color: #eaebec;
@@ -208,7 +308,6 @@ header {
 }
 
 .learning h2 {
-  font-family: 'Gothic A1', sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
   text-align: center;
@@ -217,7 +316,7 @@ header {
 
 .learning-box {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin: 0 3.5rem;
 }
 
@@ -226,6 +325,7 @@ header {
   flex-direction: column;
   background-color: #ffffff;
   margin: 1rem 1rem;
+  width: 33.33%;
 }
 
 .course-image {
@@ -243,26 +343,57 @@ header {
   justify-content: center;
   padding-top: 1rem;
   padding-left: 1rem;
+  padding-bottom: 1.5rem;
   max-width: 95%;
 }
 
 .course-content h3 {
-  font-family: 'Gothic A1', sans-serif;
   font-size: 1.25rem;
   font-weight: 700;
 }
 
 .course-content h4 {
-  font-family: 'Gothic A1', sans-serif;
   font-size: 1rem;
   font-weight: 400;
   padding: 0.5rem 0;
 }
 
-.course-content p {
-  font-family: 'Gothic A1', sans-serif;
+.learning-mobile {
+  display: none;
 }
 
+@media only screen and (max-width: 480px) {
+  .learning {
+    background-color: #ffffff;
+    display: block;
+  }
+
+  .learning h2 {
+    font-size: 2rem;
+  }
+
+  .learning-box {
+    display: none;
+  }
+
+  .learning-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 1rem 1.5rem 1rem;
+  }
+
+  .learning-mobile-box {
+    background-color: #d0d0d0;
+    width: 100%;
+    padding: 1rem 0 1.5rem 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .learning-mobile-box span {
+    font-size: 1.25rem;
+  }
+}
 /* exhibit section */
 .exhibit {
   padding: 0 0 2rem 1.5rem;
@@ -272,7 +403,6 @@ header {
   display: block;
   text-align: center;
   padding: 2rem 0;
-  font-family: 'Gothic A1', sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
 }
@@ -286,4 +416,62 @@ header {
   width: 60%;
 }
 
+.exhibit-main h3 {
+  padding-top: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.exhibit-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+  .exhibit {
+    background-color: #ffffff;
+    padding: 0;
+  }
+
+  .exhibit-mobile {
+    display: block;
+    padding-bottom: 1.5rem;
+  }
+
+  .exhibit-box {
+    display: none;
+  }
+
+  .exhibit h2 {
+    font-size: 2rem;
+    padding: 2rem 0 1rem 0;
+  }
+}
+
 /* footer */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+}
+
+.terms-privacy {
+  display: flex;
+  justify-content: space-between;
+}
+
+.terms-privacy span {
+  margin-left: 1rem;
+}
+
+@media only screen and (max-width: 480px) {
+  .terms-privacy {
+    display: none;
+  }
+
+  footer {
+    display: block;
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #ffffff;
+  }
+}

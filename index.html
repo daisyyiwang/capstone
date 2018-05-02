@@ -5,7 +5,7 @@
       <title>Colmar Academy</title>
       <link href="./resources/css/reset.css" type="text/css" rel="stylesheet">
       <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Gothic+A1:400,700|Playfair+Display" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Gothic+A1:400,700" rel="stylesheet">
     </head>
     <body>
 
@@ -26,6 +26,14 @@
             <li>Sign in</li>
           </ul>
         </div><!-- end of the nav bar -->
+
+        <!--mobile header -->
+        <div class="mobile-nav">
+          <img src="./resources/images/ic-logo.svg" alt="logo" />
+          <img src="./resources/images/ic-on-campus.svg" alt="on campus" />
+          <img src="./resources/images/ic-online.svg" alt="online" />
+          <img src="./resources/images/ic-login.svg" alt="login" />
+        </div><!-- end of the mobile nav -->
       </header><!-- end of the header -->
 
       <!--main banner-->
@@ -80,7 +88,8 @@
               <img src="./resources/images/information-guest-lecture.jpg" alt="guest lecture image" />
             </div><!--end of image-box-->
             <div class="sub-content">
-              <h3>Our guest lecture</h3>
+              <h3 class="guest-desktop">Our guest lecture</h3>
+              <h3 class="special-mobile">Special guest lecture</h3>
               <p>Join a keynote with Oliver Sack about music in medical treatment</p>
               <span class="read-more">Read more</span>
             </div><!-- end of sub-content section-->
@@ -163,6 +172,32 @@
           </div><!-- end of course-->
         </div><!-- end of learning-box -->
 
+        <div class="learning-mobile">
+          <div class="learning-mobile-box">
+            <span>Software engineering</span>
+          </div><!-- end of learning-mobile-box -->
+
+          <div class="learning-mobile-box">
+            <span>Computer art</span>
+          </div><!-- end of learning-mobile-box -->
+
+          <div class="learning-mobile-box">
+            <span>Design</span>
+          </div><!-- end of learning-mobile-box -->
+
+          <div class="learning-mobile-box">
+            <span>Data</span>
+          </div><!-- end of learning-mobile-box -->
+
+          <div class="learning-mobile-box">
+            <span>Business</span>
+          </div><!-- end of learning-mobile-box -->
+
+          <div class="learning-mobile-box">
+            <span>Marketing</span>
+          </div><!-- end of learning-mobile-box -->
+
+        </div><!-- end of learning-mobile -->
       </div><!-- end of learning -->
 
       <!--exhibit section-->
@@ -170,13 +205,13 @@
         <h2>Thesis exhibit</h2>
         <div class="exhibit-box">
           <div class="exhibit-main">
-            <video width="100%" autoplay>
+            <video width="100%" controls>
               <source src="./resources/videos/thesis.mp4" type="video/mp4">
                 Your browser does not support the video.
-              </video>
-              <h3>Reimagine urban</h3>
-              <p>"Curbabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
-            </div><!-- end of exhibit-main -->
+            </video>
+            <h3>Reimagine urban</h3>
+            <p>"Curbabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
+          </div><!-- end of exhibit-main -->
 
           <div class="practising-sub">
             <div class="sub-info">
@@ -199,8 +234,15 @@
               </div><!--end of thesis-content-->
             </div><!-- end of thesis -->
 
-          </div><!-- end of exhibit-sub -->
+          </div><!-- end of practising-sub -->
         </div><!-- end of exhibit-box -->
+
+        <div class="exhibit-mobile">
+          <video width="100%" controls>
+            <source src="./resources/videos/thesis.mp4" type="video/mp4">
+              Your browser does not support the video.
+          </video>
+        </div><!-- end of exhibit-mobile -->
       </div><!-- end of exhibit-->
 
       <!--footer-->
